@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Taquitos</title>
+    <style>
+        
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+    
+	color: #34495e;
+	font-size: 25px;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+    width: 100%;
+    position: fixed;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+        .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo" style="font-size:50px ;"><a href="#">Simple Recipe</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Recipe</a></li>
+          <li><a href="#">Quick & Easy</a></li>
+          <li><a href="#">Breakfasts & Snacks</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+	</header> 
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: 25px;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+        .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo" style="font-size:50px ;"><a href="#">Simple Recipe</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Recipe</a></li>
+          <li><a href="#">Quick & Easy</a></li>
+          <li><a href="#">Breakfasts & Snacks</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+	</header> 
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+        
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+    
+            
+        }
+        #p1{
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        #img1{
+            height: 6in;
+            width: 7in;
+        }
+        th, td {
+            border: 1px solid black;
+        
+        }
+        table{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #img2{
+            height: 6in;
+            width: 7in;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top:100px ;"></div>
+    <h1>Taquitos de Pollo (Chicken Taquitos)</h1>
+    <p style="color: gray;">Taquitos are always a family favorite. Filled with leftover shredded chicken and pan-fried,<br> taquitos de pollo are easy to make and fun to eat. Serve with lots of fun toppings like salsa and<br> crema.</p>
+    <img src="images/taquitos 1.webp" alt="" id="img1">
+    <p>Growing up, my Mexican mom announcing she was<br> making taquitos was music to my ears and a cause for celebration. The crispy, rolled-up<br> pockets of goodness were an everyday thing because it was easy for her<br> to prep over the course of the day while still managing two daughters. It<br> was a dish that always felt special but didn't take too long. <br><br>
+
+        As we grew older and got more interested in cooking, my younger sister<br> and I started helping my mom with the preparation. We rolled the<br> taquitos, washed the toppings, chopped (as our knife skills improved),<br> and made salsa in the blender with dried chile arbols or fresh serrano<br> chilies with garlic and tomatoes blistered on the stove.<br><br> 
+        
+        This is an excellent opportunity to get your family involved in the process,<br> too. And it's an easy dish for anyone to master. </p>
+    <h1>What are Taquitos?</h1>
+    <p>Traditionally, taquitos are corn tortillas stuffed with fillings such as<br> chicken, beef, cheese, beans, shrimp, and more. They are pan-fried until<br> crisp and served with toppings. <br><br>
+
+        Many people use taquitos, flautas, and tacos dorados interchangeably,<br> but they can be different dishes based on the cook and region. Flautas<br> tend to be much larger, hence the name (which translates to "flute"). They<br> are often achieved by rolling and frying two tortillas together or using<br> burrito-size flour tortillas.<br><br> 
+        
+        Tacos dorados are sometimes called taquitos. However, they can also be<br> smaller tortillas, filled, folded in half (rather than rolled), and fried until<br> golden.</p>
+        <h1>When to Serve Taquitos</h1>
+        <p>Taquitos are a fun snack food, a favorite appetizer, or a winning main<br> dish. Since the taquitos and all the toppings are pretty heavy, the only<br> side dish my mom would serve was her famous black beans. <br><br>
+
+            It is still one of my favorite meals, and now I make them with<br> my daughter. She rolls the taquitos even better than I do.</p>
+        <h1>A Flexible Recipe</h1>
+        <p>This taquitos recipe is easy to tailor to your taste and any special diets,<br> and the toppings make it easy for people to personalize the dish. Don't<br> like chicken? Use cheese. Don't like corn tortillas? Use flour. Taquitos are<br> an easy weeknight meal or something you can make for a large crowd at<br> a celebration. </p><br>
+        <img src="images/taquitos 2.webp" alt="">
+        <p>These are a colossal leftover helper and can quickly become vegetarian-<br>friendly. Fill the taquitos with leftover mashed potatoes, a shredded pot<br> roast from the night before, a mix of shredded cheese, or both. I've even<br> made these with a glut of string cheese I needed to use up, and the kids<br> went wild for them. <br><br>
+
+            I also like to make double batches and freeze the extras. They’re an easy<br> meal to pull out of the freezer for kids and adults alike.</p>
+    <h1>Taquitos Enchiladas!</h1>
+    <p>If you find yourself in the unlikely position of having lots of leftover<br>taquitos, use them as a base for enchiladas. Add canned or homemade<br> enchilada sauce and some melty cheese on top, then bake at 375°F until<br>bubbly, let it sit for 5 minutes, and serve. </p>
+    <img src="images/taquitos 3.webp" alt="">
+    <h1>Crispy, Crunchy Appetizers</h1>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;color: aqua;">
+        <u><li>The best nachos</li>
+        <li>Egg rolls</li>
+        <li>Fried Zucchini</li>
+        <li>Guyanese Pholourei</li></u>
+    </ul>
+    <h1>Ingredients</h1>
+    <h2>For the taquitos</h2>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li>24 corn tortillas</li>
+        <li>1 1/4 pounds cooked, shredded chicken breast (about 3 packed<br> cups)</li>
+        <li>1 quart canola or vegetable oil, as needed for frying</li>
+    </ul>
+    <h2>Optional toppings</h2>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li>1 medium white onion, chopped</li>
+        <li>1 bunch fresh cilantro, chopped</li>
+        <li>1 head iceberg lettuce, shredded</li>
+        <li>1 1/2 cups crema Mexicana or sour cream</li>
+        <li>1 (10-ounce) package queso fresco, crumbled</li>
+    </ul>
+    <h2>Method</h2>
+    <ol style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li style="font-weight: bold;">Heat the tortillas:</li>
+        <p>Wrap the tortillas in a clean dish towel and place them in the<br> microwave to steam, making them pliable. Use medium to high<br> heat for increments of 30 seconds until they are just warmed<br> through. Do not overheat, or they will be too fragile to use.</p>
+        <img src="images/method 1 tquitos.webp" alt="">
+        <li style="font-weight: bold;">Fill the tortillas:</li>
+        <p>Place 2 dinner plates on the counter. One is a work surface,<br> and the other is for the rolled taquitos.<br><br> 
+
+            Using a dinner plate as a work surface, place a warmed tortilla<br> in the center and add about 2 tablespoons of shredded<br> chicken towards the right of the center in an even line. Do not<br> overfill. Roll up tightly without splitting the tortilla. <br><br></p>
+            <img src="images/method 2 1.webp" alt="">
+            
+            <p>Either place the taquito seam-side down on the plate or secure<br> the tortilla by threading a toothpick through the seam of the <br>taquito like pinning a diaper. Repeat with the remaining<br> tortillas and chicken. </p>
+            <img src="images/method 2 2.webp" alt="">
+        <li style="font-weight: bold;">Fry the taquitos:</li>
+        <p>Add 1/2 inch of canola oil to a 12-inch cast iron frying pan over<br> medium heat. Use an instant-read thermometer to check the <br>temperature—it should be 350°F. Line a baking sheet or platter<br> with paper towels.<br><br>
+
+            Once the oil is hot, place 5 to 6 taquitos seam-side down in the<br> frying pan with tongs so you don't burn your fingers. Make sure<br> not to crowd the pan or the taquitos will not get golden brown.<br><br></p>
+            <img src="images/method 3.webp" alt="">
+           <p> Once you see the edges turning golden, about 3 to 4<br> minutes per side, turn over with tongs and fry until the other side is<br> cooked to the same color.<br><br>
+            
+            Remove from the pan with tongs and place on the baking<br>sheet or platter to drain. Add more oil to bring it back up to 1/2 <br>inch up the pan and let the oil come to temperature in between<br> batches, if needed. Repeat with the remaining taquitos.</p>
+            <img src="images/method 3 2.webp" alt="">
+        <li style="font-weight: bold;">Serve with toppings:</li>
+        <p>Remove the toothpicks. Add toppings like chopped onion,<br> cilantro, lettuce, crema, crumbled queso fresco, and salsa.<br> Serve hot.<br><br>
+
+            Extra taquitos (without toppings) can be stored in a zip-top<br> freezer bag in the freezer for up to 4 months or in an airtight<br> container in the fridge for 2 days. <br><br>
+            
+            While you can eat them cold out of the fridge—and I have—they<br> reheat nicely on a cookie sheet in the oven at 400°F for about 5<br> minutes or until you can see the surface sizzle. If pulling them<br> from the freezer, reduce the temperature to 350°F and increase<br> the time to 10 to 15 minutes. </p>
+        <img src="images/final taquitos.webp" alt="">
+    </ol>
+    <!-- FOOTER -->
+    <header>
+        <!-- Content -->
+      </header>
+      
+      <main>
+        <!-- Content -->
+      </main>
+      
+      <footer class="footer">
+        <div class="footer__addr">
+          <h1 style="font-size: 60px;" class="footer__logo">Simple Recipe</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            Lovely Professional University, <br> Phagwara,Punjab<br>
+                
+            <a class="footer__btn" href="alokshah951@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 style="font-size:35px ;" class="nav__title">Links</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+      
+              <li>
+                <a href="#">Quick and Easy</a>
+              </li>
+                  
+              <li>
+                <a href="#">Breakfasts & Snacks</a>
+              </li>
+              <li>
+                <a href="AboutUs.html">About Us</a>
+              </li>
+            </ul>
+          </li>
+          
+         
+          
+          <li class="nav__item">
+            <h2 style="font-size: 35px;" class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2019 Something. All rights reserved.</p>
+          
+        </div>
+      </footer>
+
+</body>
+</html>

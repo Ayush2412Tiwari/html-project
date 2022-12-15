@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Vesuvio</title>
+    <style>
+        
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+    
+	color: #34495e;
+	font-size: 25px;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+    width: 100%;
+    position: fixed;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+        .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo" style="font-size:50px ;"><a href="#">Simple Recipe</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Recipe</a></li>
+          <li><a href="#">Quick & Easy</a></li>
+          <li><a href="#">Breakfasts & Snacks</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+	</header> 
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+      
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+    
+            
+        }
+        #p1{
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        #img1{
+            height: 6in;
+            width: 7in;
+        }
+        th, td {
+            border: 1px solid black;
+        
+        }
+        table{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #img2{
+            height: 6in;
+            width: 7in;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 100px;"></div>
+    <h1>Chicken Vesuvio</h1>
+    <p style="color: gray;">Love garlic? Try this Italian-American specialty from Chicago. Chicken Vesuvio is a one-pan<br> recipe of crispy chicken thighs, potato wedges, and peas in a lemony garlic-white wine sauce.</p>
+    <img src="images/chicken vesuvio 1.webp" alt="" id="img1">
+    <p>Chicken Vesuvio is an Italian-American restaurant classic that just<br> happens to be a one-pan meal you can easily make at home. Who could<br> say no to crispy chicken thighs, potato wedges, and peas drizzled in a<br> lemony garlic white wine sauce?  <br><br>
+
+        Chicken Vesuvio serves up a starch, vegetable, and sauce along with the<br> protein, so you don’t need much else to make a complete dinner. But if I<br> want to really make this a special meal, I always like a crisp escarole<br> salad with an easy vinaigrette and crispy panko sprinkled on top.</p>
+    <h1>Origins of Chicken Vesuvio</h1>
+    <p>Depending on who you ask, chicken Vesuvio originated in Chicago in the<br> 1920s, 30s, or 60s, at one of three different Italian restaurants. Possibly<br> it’s named after the volcano Vesuvius in Southern Italy, because of the<br> way the steam rises when the wine is added to the hot pan.) Or it could<br> be because the way the chicken pieces are piled on top of the potatoes<br> suggests a mountain on the plate. Either way, the Windy City got lucky.</p>
+    <img src="images/chicken vesuvio 2.webp" alt="">
+    <h1>The Best Wine for Chicken Vesuvio</h1>
+    <p>Most people say you shouldn’t cook with a wine you wouldn’t drink, as the<br> heat will only enhance the undesirable flavors. But you don’t have to buy<br> an expensive bottle; most middle of the road brands are perfectly<br> drinkable. <br><br>
+
+        Look for a wine that’s dry and crisp with a little acidity. Popular choices<br> include the more neutral pinot grigio or a sauvignon blanc that skews a<br> little grassier. And don’t worry, the alcohol burns off long before you sit<br> down to eat. For those of you who prefer to cook without wine, a non-<br>alcoholic wine or low-sodium chicken broth is a fine substitute. You may<br>need to add a splash more lemon juice to make up for the acidity from<br> the wine so taste and adjust until it suits you!</p>
+    <h1>Boost the Flavor in Your Chicken<br> Vesuvio</h1>
+    <p>Some recipes call for smashing the garlic into the sauce or grating fresh<br> garlic in at the end for a final sharpness, but I like not only the ease of<br> thinly slicing the cloves, but it also keeps the sauce preparation simple.<br> It’s still plenty garlicky, but a little more mellow.<br><br>
+
+        I use the zest as well as the juice of the lemon. The zest boosts the<br> lemon flavor, while the juice provides the acid for the sauce. It’s also a<br> zero-waste kitchen tip!<br><br>
+        
+        Another flavor boost comes from browning the potatoes in the chicken<br> fat after crisping the skin. You may not need to add additional oil, but<br> even if you do, the potatoes will soak up plenty of chicken-y flavor.</p>
+        <img src="images/chicken vesu 3.webp" alt="">
+        <h1>An Easy Meal, but Not a Make-Ahead<br> One </h1>
+        <p>Once it sits overnight in the fridge, the crispy skin gives way to a<br> disappointing flabbiness. If you do need to store any leftovers, simply<br> remove the skin the next day, and reheat both the chicken and potatoes<br> in a microwave-safe container covered loosely with a lid to prevent<br> splattering until heated through. <br><br>
+
+            You could also reheat in the oven in a baking dish covered with foil. It<br> wouldn’t hchurt to drizzle with some fresh lemon juice after you reheat as<br> the lemon flavor will fade overnight.</p>
+            <img src="images/chicken vesu 4.webp" alt="">
+
+        <h1>Ingredients</h1>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li>1 tablespoon olive oil</li>
+        <li>4 skin-on bone-in chicken thighs, excess fat and skin trimmed<br> (about 1 3/4 pounds)</li>
+        <li>2 teaspoons kosher salt, divided </li>
+        <li>1/2 teaspoon freshly ground black pepper, plus more for<br> seasoning the potatoes </li>
+        <li>2 large russet potatoes, skin on, cut into 1/2-to-3/4-inch wedges </li>
+        <li>1 tablespoon unsalted butter</li>
+        <li>Cloves from 1 head garlic, peeled and thinly slice</li>
+        <li>1 teaspoon dried oregano or Italian seasoning</li>
+        <li>3/4 cup dry white wine</li>
+        <li>3/4 cup frozen peas (not defrosted)</li>
+        <li>Finely grated zest of 1 lemon (about 1/2 teaspoon) </li>
+        <li>1 tablespoon lemon juice</li>
+        <li>About 1/4 cup chopped fresh flat-leaf parsley leaves</li>
+    </ul>
+    <h1>Method</h1>
+    <ol style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li style="font-weight: bold;">Put the oven rack in the middle and preheat the oven to 400°F.</li><br><br>
+        <li style="font-weight: bold;">Season the chicken:</li>
+    <p>Sprinkle the chicken with 1 1/2 teaspoons of the salt and 1/2<br> teaspoon pepper.</p>
+    <img src="images/vesu method 2.webp" alt="">
+        <li style="font-weight: bold;">Cook the chicken:</li>
+        <p>Heat a 12-inch cast-iron pan gradually over medium-low heat<br> until it’s good and hot, about 10 minutes. (This may seem like<br> a long time, but the pan is over medium-low during this time,<br> and the payoff is nice and crispy golden-brown skin.) <br><br>
+
+            Then turn the heat up to medium-high and add the oil. Place<br> the chicken in the pan, skin-side down. Cook without moving<br> until the skin develops a nice brown crust (you’ll have to peek<br> from time to time, gently lifting the chicken without tearing the<br> skin, until it releases from the pan), 8-10 minutes. <br><br>
+            
+            Remove to a plate. The chicken isn’t cooked through yet, so<br> don’t worry. It goes in the oven with the potatoes later on.</p>
+            <img src="images/vesu method 3.webp" alt="">
+        <li style="font-weight: bold;">Cook the potato wedges:</li>
+        <p>If there isn’t about 2 tablespoons of fat in the pan, add a little<br> more oil. Otherwise, add the potato wedges and sprinkle with<br> remaining 1/2 teaspoon salt and a pinch of pepper.<br><br> 
+
+            Stir to coat with and arrange in the skillet flat side down. Cook<br> until they turn light to golden brown. Flip as they brown, about<br> 8 minutes total. Remove to another plate. The potatoes will<br> also finish cooking when they go in the oven with the chicken.</p>
+            <img src="images/vesu method 4.webp" alt="">
+        <li style="font-weight: bold;">Make the sauce:</li>
+        <p>Turn the heat to medium-low and add the butter, garlic, and<br> dried oregano or Italian seasoning. Cook, stirring, until the<br> garlic is fragrant but doesn’t turn brown, about 30 seconds. <br><br>
+
+            Add the wine and frozen peas and bring to a simmer, about 20<br> seconds.</p>
+            <img src="images/veso method 5.webp" alt="">
+        <li style="font-weight: bold;">Add potatoes and chicken into the sauce:</li>
+        <P>Turn off the heat, return the potatoes to the pan, and turn to<br> coat in the sauce. Then arrange the chicken on top, skin-side<br> up, and drizzle any juices left behind on the plate around<br> the potatoes.</P>
+        <img src="images/veso method 6.webp" alt="">
+        <li style="font-weight: bold;">Bake the chicken and potatoes:</li>
+        <p>Place the pan in the oven and bake until the potatoes and<br> chicken are cooked through, with the chicken reaching an<br> internal temperature of 180 to 185°F, about 30-35 minutes,<br> depending on the size of the thighs. The chicken will deepen in<br> color and the potatoes will be tender.</p>
+        <li style="font-weight: bold;">Finish and serve:</li>
+        <p>Drizzle with the lemon juice, and sprinkle with the lemon zest<br> and parsley before serving.<br><br>
+
+            This dish is best eaten the day you cook it. Refrigerate<br> leftovers in a tightly covered container for 3-4 days.</p>
+            <img src="images/final vesu.webp" alt="">
+    </ol>
+   <!-- FOOTER -->
+   <header>
+    <!-- Content -->
+  </header>
+  
+  <main>
+    <!-- Content -->
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1 style="font-size: 60px;" class="footer__logo">Simple Recipe</h1>
+          
+      <h2>Contact</h2>
+      
+      <address>
+        Lovely Professional University, <br> Phagwara,Punjab<br>
+            
+        <a class="footer__btn" href="alokshah951@gmail.com">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 style="font-size:35px ;" class="nav__title">Links</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+  
+          <li>
+            <a href="#">Quick and Easy</a>
+          </li>
+              
+          <li>
+            <a href="#">Breakfasts & Snacks</a>
+          </li>
+          <li>
+            <a href="AboutUs.html">About Us</a>
+          </li>
+        </ul>
+      </li>
+      
+     
+      
+      <li class="nav__item">
+        <h2 style="font-size: 35px;" class="nav__title">Legal</h2>
+        
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+          
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy; 2019 Something. All rights reserved.</p>
+      
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: 25px;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+        .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo" style="font-size:50px ;"><a href="#">Simple Recipe</a></h1>
+      <ul class="main-nav">
+          <li><a href="Iframe.html">Recipe</a></li>
+          <li><a href="Iframe.html">Quick & Easy</a></li>
+          <li><a href="Iframe.html">Breakfasts & Snacks</a></li>
+          <li><a href="updatedaboutus.html">About Us</a></li>
+      </ul>
+	</header> 
+
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <style>
+        a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
+a:visited {
+  color: rgb(8, 0, 2);
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+
+} 
+#divMain
+{ 
+ margin: 0 auto; 
+ padding: 0; 
+ width: 1024px; 
+ text-align: left; 
+ 
+ 
+} 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+.row {
+  display: flex;
+ 
+  
+  
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  
+}
+.button {
+  border-radius: 4px;
+  background-color: #09440c;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:white;"><div id="divMain"> 
+    
+   </div> 
+    
+    <h1><a href="Home.html" class="button" target="_self"><span style="font-size: 50px;">Yay Leftovers! Now What?</span> </a></h1>
+
+    <div class="row">
+        <div class="column">
+         <a href="1.html" class="button" target="_blank"> <img src="images/i4.webp" alt="Snow" style="width:100%"><span> Cyber Monday Deals of 2022</span></a>
+        </div>
+        <div class="column">
+         <a href="1.2.html" class="button" target="_blank" > <img src="images/i5.webp" alt="Forest" style="width:100%"><span>Mom's Turkey Soup</span></a>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="column">
+          <a href="1.3.html" class="button" target="_blank"><img src="images/i6.webp" alt="Snow" style="width:100%"><span>Curried Turkey Soup(with leftover Turkey)</span></a>
+        </div>
+        <div class="column">
+         <a href="1.4.html0" class="button" target="_blank"><img src="images/i7.webp" alt="Forest" style="width:100%"><span>Wild Rice salad with Cranberries and Pecans </span></a> 
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="column">
+          <a href="1.5.html" class="button" target="_blank"><img src="images/i8.webp" alt="Snow" style="width:100%"><span>Turkey Black Bean Enchiladas</span></a>
+        </div>
+        <div class="column">
+          <a href="1.6.html" class="button" target="_blank"><img src="images/i9.webp" alt="Forest" style="width:100%"><span>Bread Pudding</span></a>
+        </div>
+        
+      </div>
+</body>
+</html>

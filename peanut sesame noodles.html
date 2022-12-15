@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peanut Noodles</title>
+    <style>
+        
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+    
+	color: #34495e;
+	font-size: 25px;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+    width: 100%;
+    position: fixed;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+        .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo" style="font-size:50px ;"><a href="#">Simple Recipe</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Recipe</a></li>
+          <li><a href="#">Quick & Easy</a></li>
+          <li><a href="#">Breakfasts & Snacks</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+	</header> 
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+      
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+    
+            
+        }
+        #p1{
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        #img1{
+            height: 6in;
+            width: 7in;
+        }
+        th, td {
+            border: 1px solid black;
+        
+        }
+        table{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="margin-top: 100px;"></div>
+    <h1>Sesame Peanut Noodles</h1>
+    <p style="color: gray;">Make a big batch of these nutty, sweet, and soy saucy noodles and enjoy them cold for a quick<br> lunch over a few days. It’s the best make-ahead recipe for your back pocket!</p>
+    <img src="images/Simply-Recipes-Sesame-Peanut-Noodles-LEAD-05-29fcda26b0e34bc4b638557a56ff8a09.webp" alt="" id="img1">
+    <p>Cold sesame noodles are my go-to order at a local Szechuan restaurant,<br> so I was so excited to find an easy way to make them at home. My<br> version of sesame peanut noodles comes together in just 20 minutes—<br>perfect for a weeknight dinner—and requires minimal pantry ingredients.<br> The sauce bursts with nutty, sweet, and salty flavor. It makes a great side<br> dish, but you can also add any protein and serve it as a main course!</p>
+    <h1>Serve Sesame Peanut Noodles Cold</h1>
+    <p>These noodles are best served cold, which is GREAT because you don’t<br> need to reheat them if you end up with leftovers. I like to garnish them<br> with sesame seeds and sliced green onion, and serve them with steamed<br> vegetables, like broccoli, bok choy, and zucchini.</p>
+    <h1>Two Simple Tips</h1>
+    <p>This recipe is easy and straightforward, but here are two things to watch out for: </p>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li><b>I prefer natural peanut butter</b> because it contains no additives or<br> sweeteners; the only ingredients are peanuts and salt. Natural peanut<br> butter has a more liquidy texture than conventional peanut butter, so it<br> will blend more easily into the sauce.</li>
+        <li><b>Toss the cooked noodles with sesame oil immediately after rinsing<br> and draining them.</b> This will make sure the noodles don’t stick to each<br> other.       </li>
+    </ul>
+    <h1>Make-Ahead Tips</h1>
+    <p>The noodles and sauce can be made ahead of time and stored separately<br> in the fridge in airtight containers for up to 3 days.  When you are ready to<br> serve, add a tablespoon of warm water to the peanut sesame sauce to<br> thin it out, then toss the noodles and sauce together. There is no need to<br> reheat it—it’s best served cold!</p>
+    <img src="images/Simply-Recipes-Sesame-Peanut-Noodles-LEAD-04-52909a37aeb44e55bec04f6d81523f7b.webp" alt="">
+    <h1>The Savory Side of Peanut Butter</h1>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;color: aqua;">
+        <u><li>Grilled cabbage with peanut sauce</li>
+        <li>Chicken peanut curry</li>
+        <li>African chicken peanut stew</li>
+        <li>Thai noodle salad with peanut sauce</li></u>
+    </ul>
+    <h1>Ingredients</h1>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li>8 ounces dry soba, rice, or egg noodles</li>
+        <li>2 tablespoons toasted sesame oil, divided</li>
+        <li>3 tablespoons natural peanut butter</li>
+        <li>1/4 cup soy sauce</li>
+        <li>1 1/2 tablespoons honey</li>
+        <li>1 1/2 tablespoons rice vinegar</li>
+        <li>1 clove garlic, grated</li>
+        <li>
+            1 tablespoon toasted sesame seeds, for garnish (optional)</li>
+        <li>1 green onion, sliced, for garnish (optional)</li>
+    </ul>
+        <h1>Method</h1>
+        <ol style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+            <li style="font-weight: bold;">Cook the noodles:</li>
+            <p>Bring a large pot of water to a boil over high heat. Add the<br> noodles and cook following package instructions. Drain into a<br> colander set in the sink, then rinse with cold running water<br> until cool to the touch. Drain well.<br><br> 
+
+                Transfer into a medium bowl and toss them with 1 tablespoon<br> sesame oil so that they don’t stick to each other. Cover with <br>plastic wrap and place them in the fridge to keep cool while<br> you prepare the sauce.</p>
+            <img src="images/noodles.webp" alt="">
+            <li style="font-weight: bold;">Prepare the sauce:</li>
+            <p>In a small bowl, add the remaining 1 tablespoon sesame oil,<br> peanut butter, soy sauce, honey, rice vinegar, and garlic. Whisk<br> with a fork until combined and smooth.</p>
+            <img src="images/sauce.webp" alt="">
+            <li style="font-weight: bold;">Assemble the noodles:</li>
+            <p>Scrape the peanut sesame sauce on the cold noodles and toss<br> to combine. Garnish with sesame seeds and green onions, if<br> desired.<br><br>
+
+                Leftovers can be stored in an airtight container in the fridge for<br> up to 3 days. Before serving them again, toss with a little warm<br> water to thin out the sauce.</p>
+        <img src="images/Simply-Recipes-Sesame-Peanut-Noodles-LEAD-03-3082c2588c69490eb954ee06cae6a800.webp" alt="">
+        </ol>
+        <!-- FOOTER -->
+        <header>
+            <!-- Content -->
+          </header>
+          
+          <main>
+            <!-- Content -->
+          </main>
+          
+          <footer class="footer">
+            <div class="footer__addr">
+              <h1 style="font-size: 60px;" class="footer__logo">Simple Recipe</h1>
+                  
+              <h2>Contact</h2>
+              
+              <address>
+                Lovely Professional University, <br> Phagwara,Punjab<br>
+                    
+                <a class="footer__btn" href="alokshah951@gmail.com">Email Us</a>
+              </address>
+            </div>
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 style="font-size:35px ;" class="nav__title">Links</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Quick and Easy</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Breakfasts & Snacks</a>
+                  </li>
+                  <li>
+                    <a href="AboutUs.html">About Us</a>
+                  </li>
+                </ul>
+              </li>
+              
+             
+              
+              <li class="nav__item">
+                <h2 style="font-size: 35px;" class="nav__title">Legal</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>&copy; 2019 Something. All rights reserved.</p>
+              
+            </div>
+          </footer>
+    </body>
+</html>

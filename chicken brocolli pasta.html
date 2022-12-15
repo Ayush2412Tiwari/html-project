@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Brocolli Pasta</title>
+    <style>
+        
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+    
+	color: #34495e;
+	font-size: 25px;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+    width: 100%;
+    position: fixed;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+        .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo" style="font-size:50px ;"><a href="#">Simple Recipe</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Recipe</a></li>
+          <li><a href="#">Quick & Easy</a></li>
+          <li><a href="#">Breakfasts & Snacks</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+	</header> 
+
+</body>
+</html>
+
+
+
+
+
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+   
+        
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+    
+            
+        }
+        #p1{
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        #img1{
+            height: 6in;
+            width: 7in;
+        }
+        th, td {
+            border: 1px solid black;
+        
+        }
+        table{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div style="margin: 100px;px ;">
+    <h1>Chicken and Broccoli Pasta</h1>
+    <p style="color: gray;">This easy, weeknight-friendly recipe combines penne, flavorful chicken, bright broccoli, and a<br>zesty white wine and lemon sauce. It’s all one complete meal―no sides required.</p>
+    <img src="images/Simply-Recipes-Chicken-and-Broccoli-Pasta-LEAD-16-6d156c2b22784e95a3265f9e1e2be6d8.webp" alt="" id="img1">
+    <p>It’s no wonder that busy home cooks love this dish. It combines three<br> perennial favorites—chicken, broccoli, and pasta—and brings them<br> together with a bright, zesty sauce made with garlic, white wine, and<br> lemon juice. It’s like making chicken picatta and serving it with broccoli<br> and pasta, except that you only need one pan (and your pasta pot).<br>
+
+        While some cooks who make this dish use the “hack” of cooking their<br> broccoli directly in the pasta water (along with the noodles), I’ve found<br> that it’s just as fast to cook both the chicken and broccoli separately—<br>and it gives you a far better flavor, because you can brown the ingredients<br> to get a little maillard reaction going (the chemical process that gives<br> deeply browned foods their rich, savory flavor).<br> 
+        
+        Plus, since you can cook both of these ingredients in about the time it<br> takes the pasta pot to boil, it won’t add any additional cooking time. Once<br> the pasta is boiling, you can cook the garlic, white wine, and lemon juice<br> in the same pot you cooked the meat and veg in, then add everything<br> into the pot together. The finished dish will be on the table in just 40 minutes.</p>
+    <h1>The Easy Genius of Chicken Thighs</h1>
+    <p>Most cooks might grab some boneless chicken breasts for this recipe,<br> but you’ll have a far better result with boneless, skinless chicken thighs.<br> Unlike breasts, the thighs don’t dry out as they cook. In fact (as barbecue<br> fanatics will tell you), they become more tender as they get hotter. This<br> means you don’t have to worry about over-cooking them. Besides, darker<br> meat naturally has more flavor, so the thighs will add more flavor to the<br> overall dish. </p>
+    <h1>Don’t Skip the White Wine</h1>   
+    <p>The one thing you don’t want to swap out is the white wine. While it might<br> not seem like a key ingredient here, the wine forms the base of the sauce<br> and gives it a rich but subtle flavor. Without it, the garlic and lemon will<br> taste too acidic and sharp. (For this reason, it’s also best to use a dry<br> wine without too much acidity or a particularly strong oak flavor.)</p>
+    <img src="images/Simply-Recipes-Chicken-and-Broccoli-Pasta-LEAD-19-23a39f1cc9534fb0af2ef78d137fbdb2.webp" alt="">
+    <h1>Don’t Ignore the Broccoli Stems</h1>
+    <p>While florets get all the attention, broccoli stems are just as delicious—<br>and sometimes more versatile, since they soften more slowly and don’t<br> absorb liquid. (When my kid was first starting to eat solid foods, she<br>hated the texture of broccoli florets but happily ate the smooth, tender<br> stems.) In this recipe, I’ve used both the stems and the florets. To prepare<br> the stems, peel them with a vegetable peeler (or a sharp cleaver) and cut<br> them into 1/4-inch thick coins. </p>
+    <h1>Reserving Pasta Water</h1>
+    <p>Adding some reserved pasta water—the starchy, salty water the pasta<br> has been cooking in—to your dish is a fast, cheap way to add liquid to a<br>sauce without diluting its flavor. The key is to remove the water just<br> before the pasta is done cooking; that’s when it has the most flavor. To<br> do this, you can ladle some water into a bowl, but my favorite trick is to<br> grab a liquid measuring cup (the kind made out of Pyrex, with a<br>convenient handle) and dip that straight into the pot.</p>
+    <h1>Ingredients</h1>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li>5 cups broccoli florets and stems (1 pound before trimming)</li>
+        <li>1 pound boneless skinless chicken thighs</li>
+        <li>1 tablespoon plus 1 teaspoon kosher salt, divided, plus more to<br> taste</li>
+        <li>12 ounces penne pasta</li>
+        <li>2 tablespoons extra virgin olive oil</li>
+        <li>1/2 teaspoon chili flakes (optional)</li>
+        <li>3 tablespoons unsalted butter</li>
+        <li>3 tablespoons minced garlic</li>
+        <li>1/3 cup freshly squeezed lemon juice</li>
+        <li>1 1/4 cups dry white wine</li>
+        <li>1/4 cup finely grated parmesan
+        </li>
+    </ul>
+        <h1>Method</h1>
+        <ol style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+            <li style="font-weight: bold;">Prepare the broccoli:</li>
+            <p>Cut the broccoli into small florets, peel the stems, and cut the<br> stems crosswise into 1/2-inch thick slices; set aside.
+            </p>
+            <li style="font-weight: bold;">Cut the chicken into strips:</li>
+            <p>Cut the chicken thighs in half lengthwise, and then cut them<br> crosswise into strips about 1/2 inch thick and 1 inch long;<br> set aside.</p>
+            <li style="font-weight: bold;">Cook the broccoli and chicken:</li>
+            <p>While the water is heating, cook the broccoli and chicken: Pour<br> 1 tablespoon of the olive oil into a Dutch oven or other heavy-<br>duty pot, and heat it on high. Add the broccoli, and season with<br> 1/2 teaspoon of the salt. Add 1/4 cup of water, then cover the<br> pot and let the broccoli steam in the liquid, stirring<br> occasionally (then re-covering the pot) until thickest parts of<br> the stems are just barely tender, about 4-8 minutes.</p>
+            <img src="images/green broccoli.webp" alt="">
+            <p>Remove the lid, add 1 more tablespoon of olive oil and the<br> chile flakes (if using), and cook the broccoli, stirring<br> occasionally but letting it sit on the bottom and sides of the<br> pot undisturbed for about 1 minute at a time, so that it browns<br> nicely, until all of the pieces have browned a bit, another 3 to 4 minutes.<br>  Remove the broccoli from the pot, and set it aside in<br> a large bowl, covered. Rinse the pot.<br><br>
+
+                Put the pot back on the stove over high heat. Add another 1<br> tablespoon of olive oil to the pan, and let it heat for 30<br> seconds, then add the chicken, spreading it out in an even<br> layer; season it with 1/2 teaspoon of salt. Let the chicken<br> brown in the pan, undisturbed, until it has a nice crisp brown<br> color on the bottom, 4 to 6 minutes, depending on the heat of<br> your pan (and how crowded it is). Stir the chicken, and let it<br> continue to cook until it is cooked through, for another 2 to 4<br> minutes. Turn off the heat under the pan and remove the<br> chicken to the bowl with the broccoli, but do not rinse the pan.<br> (The browned bits will help flavor the sauce.)</p>
+            <img src="images/yellow broccoli.webp" alt="">
+            <li style="font-weight: bold;">Boil the pasta:</li>
+            <p>When the water comes to a boil, add 1 tablespoon of salt, and<br> then boil the pasta until it is just barely al dente (about 8<br> minutes, for penne).</p>
+            <li style="font-weight: bold;">Make the sauce:</li>
+            <p>While the pasta is cooking, make the sauce: Add the butter to<br> the pot with the chicken drippings and let it melt over medium<br> heat. Add the garlic, and cook, stirring, until it no longer smells<br> raw, about 1 minute. Add the wine and lemon juice to the pot,<br> and bring it to a boil, scraping up the browned bits on the<br> bottom of the pot with a wooden spoon. Turn the heat to high,<br> and let the sauce boil for 1 minute, to reduce it slightly (and<br> cook off the alcohol in the wine). Turn off the heat until the<br> pasta is ready.</p>
+            <img src="images/sauce chicken.webp" alt="">
+            <li style="font-weight: bold;">Assemble the pasta:</li>
+            <p>When the pasta is done, scoop 1 cup of pasta water out of the<br> pot and reserve. Drain the pasta, then add it to the pan along<br> with 1/2 cup of the pasta water. Cook for 1 minute; the sauce<br> should thicken slightly but there should still be plenty around<br> the noodles. (Add a bit more of the pasta water if necessary).<br> Add the broccoli and chicken to the pot, stir to coat them in the<br> sauce, and cook until they’re just warmed through, about 30<br> seconds. Taste and add more salt if necessary.</p>
+            <img src="pasta.webp" alt="">
+            <li style="images/font-weight: bold;">Serve:</li>
+            <p>Divide the pasta into 4 bowls, and top each with 1 tablespoon<br> of the grated parmesan. <br>
+
+                Refrigerate leftovers, tightly covered, for up to 4 days.</p>
+        <img src="images/Simply-Recipes-Chicken-and-Broccoli-Pasta-LEAD-1-a2cb3b64a9d343b1b65f08283dcb63c5.webp" alt="">
+        </ol>
+        <!-- FOOTER -->
+       <header>
+        <!-- Content -->
+      </header>
+      
+      <main>
+        <!-- Content -->
+      </main>
+      
+      <footer class="footer">
+        <div class="footer__addr">
+          <h1 style="font-size: 60px;" class="footer__logo">Simple Recipe</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            Lovely Professional University, <br> Phagwara,Punjab<br>
+                
+            <a class="footer__btn" href="alokshah951@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 style="font-size:35px ;" class="nav__title">Links</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+      
+              <li>
+                <a href="#">Quick and Easy</a>
+              </li>
+                  
+              <li>
+                <a href="#">Breakfasts & Snacks</a>
+              </li>
+              <li>
+                <a href="AboutUs.html">About Us</a>
+              </li>
+            </ul>
+          </li>
+          
+         
+          
+          <li class="nav__item">
+            <h2 style="font-size: 35px;" class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2019 Something. All rights reserved.</p>
+          
+        </div>
+      </footer>
+</body>
+
+
+

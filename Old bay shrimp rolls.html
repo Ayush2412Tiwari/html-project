@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old bay shrimp rolls</title>
+    <style>
+        
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+    
+	color: #34495e;
+	font-size: 25px;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+    width: 100%;
+    position: fixed;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+        .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+		<h1 class="logo" style="font-size:50px ;"><a href="#">Simple Recipe</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Recipe</a></li>
+          <li><a href="#">Quick & Easy</a></li>
+          <li><a href="#">Breakfasts & Snacks</a></li>
+          <li><a href="#">About Us</a></li>
+      </ul>
+	</header> 
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+      
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+    
+            
+        }
+        #p1{
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        #img1{
+            height: 6in;
+            width: 7in;
+        }
+        th, td {
+            border: 1px solid black;
+        
+        }
+        table{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+ <div style="margin-top: 100px;"></div>
+    <h1>Old Bay Shrimp Rolls</h1>
+    <p id="p1" style="color: gray;">These summer-inspired shrimp rolls are the perfect dish to serve a crowd—they’re warm,<br> delightfully creamy, yet packed with enough zesty and bright flavors to keep things from getting<br> too dense.</p>
+    <img src="images/Simply-Recipes-Shrimp-Rolls-LEAD-07-6f913dd31a1642e28389b3e9c9d1268e (1).webp" alt="" id="img1">
+    <p>I was born and raised in New England, so there’s one food (or food group,<br> really) that’s always been synonymous with summer for me: seafood<br> rolls. Hot and buttered or chilled and creamy, I’ve never met a seafood roll<br> I didn’t love—but when it comes to actually making them? Well, that’s a<br> different story, since they’re either A) notoriously labor-intensive, B)<br> altogether too expensive, or in some cases, both.<br> 
+
+        In my never-ending quest to develop a seafood roll recipe that was<br> undeniably delicious, budget-friendly, and simple to put together, I landed<br> on these warm, Old Bay-spiced shrimp rolls that just so happen to be as<br> crowd-pleasing as they are economical.</p>
+    <h1>The Components of a Shrimp Roll</h1>
+    <p style="images/font-size: 20px;">There aren’t a ton of ingredients in these shrimp rolls, but each serves a<br> very specific (and important) purpose:</p>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+        <li>The <b>hot dog buns</b> keep everything in their compact, handheld package,<br> and since they’re top split, both sides of the buns can be toasted to<br> buttery, golden perfection. If you can’t find top-split (sometimes called<br> “New England-style”) buns, you can certainly use regular—but the<br> former is definitely a classic when it comes to seafood rolls.</li>
+        <li>A layer of crisp <b>lettuce</b> adds a subtle crunch, but it also keeps the buns<br> from getting soggy. As a result, you can even pack these rolls for a<br> picnic without worrying that you’ll end up with a soggy mess.</li>
+        <li><b>Chives and shallots</b> deliver an onion-y, savory bite in two ways: the<br> chives are mixed into a lemony mayo that gives these rolls some<br> creaminess, and the shallots are fried until crisp and sprinkled over top<br> for a rich, salty crunch.</li>
+        <li>When it comes to the <b>shrimp</b>, we’re keeping things simple: Toss them<br> in some Old Bay seasoning and olive oil, sear until they’re wonderfully<br> browned, and pile high. I find that large (26/30 count) shrimp work best<br> here, as they’re large enough to take on some color without<br> overcooking yet still perfectly bite-sized.</li>
+    </ul>
+    <h1>Old Bay—A Blend of 18 Herbs and Spices</h1>
+    <p style="font-size: 20px;">Old Bay has become the seasoning of choice for many seafood dishes,<br> and even though it’s technically only one ingredient, it adds lots of<br> complexity to anything you cook with it—and these shrimp rolls are no<br> exception. It’s a blend of 18 distinct herbs and spices, but I find that one<br> in particular is the star of the show: celery salt. It bumps up<br> the savoriness of this dish without any extra effort on your part and turns this<br> simple recipe into one that I crave more than I’d care to admit.</p>
+    <img src="images/Simply-Recipes-Shrimp-Rolls-LEAD-16-71a3fc07d4d4446faaa685040c48d79c.webp" alt="">
+    <h1>What to Serve with Shrimp Rolls</h1>
+    <p style="font-size: 20px;">These shrimp rolls practically scream summer. A hearty pile of potato<br> chips works beautifully here (and doesn’t require any additional work).<br>Rule of thumb: if you can imagine happily devouring it on a hot summer<br> day, it’ll taste delicious alongside these shrimp rolls. Here are a few<br> options:</p>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px; color: aqua;">
+        <u><li>Classic Coleslaw</li>
+        <li>German Potato Salad</li>
+        <li>Grilled Corn Salad</li>
+        <li>Cherry Tomato Orzo Salad</li></u>
+    </ul>
+    <h1>Ingredients</h1>
+    <h2>For the crispy shallots</h2>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;"><li>2 cups thinly sliced shallots (from 3-4 large shallots)</li>
+        <li> 1/4 cups  vegetable or canola oil</li>
+        <li>1/4 teaspoon kosher salt, divided</li></ul>
+    <h2>For the lemony chive mayo</h2>
+    <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;"><li>1/2 cup mayonnaise</li>
+        <li>2 tablespoons lemon juice</li>
+        <li>2 tablespoons minced chives, plus more for garnish</li>
+        <li>1 teaspoon grated garlic</li>
+        <li>1/4 teaspoon cracked black pepper</li>
+        <li>1/2 teaspoon kosher salt</li></ul>
+        <h2>For the shrimp rolls</h2>
+        <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+            <li>1 pound large (26/30 count) shrimp, peeled, deveined, and tails removed</li>
+            <li>1 tablespoon olive oil</li>
+            <li>1 tablespoon Old Bay seasoning</li>
+            <li>2 tablespoons softened, unsalted butter</li>
+            <li>4 top-split (or “New England-style”) hot dog buns</li>
+            <li>1 head of butter or Bibb lettuce</li>
+        </ul>
+            <h2>Method</h2>
+            <ol style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 20px;">
+                <li style="font-weight: bold;">Fry the crispy shallots:</li>
+                <p>Line a plate with paper towels before you begin frying the<br> shallots.<br>
+
+                    Add the thinly sliced shallots and oil to a small saucepan and<br> place over medium heat. Bring the shallots and oil to a boil,<br> then reduce heat to medium-low. Let the oil simmer for 15-20<br> minutes, stirring every 2-3 minutes, or until the bubbling fades<br> and the shallots begin to turn a pale golden color.
+                </p>
+                <img src="images/method 1 shrimp.webp" alt="">
+                <li style="font-weight: bold;">Drain the shallots:</li>
+                <p>Once the shallots start to brown, stir constantly for about 1<br> minute or until they’re uniformly golden. Use a slotted spoon to<br> remove them onto a paper towel-lined plate and spread them<br> out evenly. Sprinkle with kosher salt and set aside.</p>
+                <img src="images/drain sghrimp.webp" alt="">
+                <li style="font-weight: bold;">Make the lemony chive mayo:</li>
+                <p>In a small bowl, whisk together the mayonnaise, lemon juice,<br> chives, garlic, black pepper, and kosher salt until smooth.<br> Reserve until ready to assemble the shrimp rolls.</p>
+                <img src="images/lemon mayo.webp" alt="">
+                <li style="font-weight: bold;">Season the shrimp:</li>
+                <p>Pat the shrimp completely dry with paper towels and add to a<br> large mixing bowl. Drizzle with olive oil and sprinkle with the<br> Old Bay seasoning. Use your hands or a spoon to make sure<br> each shrimp is evenly coated.</p>
+                
+                <img src="images/season shrimp.webp" alt=""><li style="font-weight: bold;">Sear the shrimp:</li>
+                <p>Place a large nonstick skillet over high heat. When hot, add the<br> seasoned shrimp in one even layer, without any additional oil.<br> Sear the shrimp for 1 minute, or until they’ve begun to turn pink<br> at the edges.<br>
+
+                    Use tongs to turn them and sear the second side for another<br> minute, or until the shrimp are just cooked through and curled.<br>
+                    
+                    Remove the shrimp to a plate and reserve until ready to<br> assemble.</p>
+                <li style="font-weight: bold;">Toast the buns:</li>
+                <p>Wipe out the skillet and place over medium heat. Spread the<br> softened butter on the outside edges of the top-split hot dog<br> buns. Place the buns in the skillet and toast for 2-3 minutes on<br> each side, or until golden brown and crisp. Remove to a<br> serving platter.</p>
+                <img src="images/toast buns.webp" alt="">
+                <li style="font-weight: bold;">Assemble the shrimp rolls:</li>
+                <p>Line the inside of each toasted bun with 2 leaves of butter<br> lettuce and top each with 1/4 of the seared shrimp. Drizzle<br> with the lemony chive mayo, and sprinkle generously with the<br> crispy shallots and reserved chives. <br>
+
+                    Serve warm, with plenty of napkins.</p>
+                <img src="images/Simply-Recipes-Shrimp-Rolls-LEAD-08-28f47fd7bc0b4c3a9f0478c05343d67b.webp" alt="">
+                </ol>
+              <!-- FOOTER -->
+        <header>
+            <!-- Content -->
+          </header>
+          
+          <main>
+            <!-- Content -->
+          </main>
+          
+          <footer class="footer">
+            <div class="footer__addr">
+              <h1 style="font-size: 60px;" class="footer__logo">Simple Recipe</h1>
+                  
+              <h2>Contact</h2>
+              
+              <address>
+                Lovely Professional University, <br> Phagwara,Punjab<br>
+                    
+                <a class="footer__btn" href="alokshah951@gmail.com">Email Us</a>
+              </address>
+            </div>
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 style="font-size:35px ;" class="nav__title">Links</h2>
+          
+                <ul class="nav__ul">
+                  <li>
+                    <a href="index.html">Home</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Quick and Easy</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Breakfasts & Snacks</a>
+                  </li>
+                  <li>
+                    <a href="AboutUs.html">About Us</a>
+                  </li>
+                </ul>
+              </li>
+              
+             
+              
+              <li class="nav__item">
+                <h2 style="font-size: 35px;" class="nav__title">Legal</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Terms of Use</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Sitemap</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>&copy; 2019 Something. All rights reserved.</p>
+              
+            </div>
+          </footer>
+</body>
+</html>
